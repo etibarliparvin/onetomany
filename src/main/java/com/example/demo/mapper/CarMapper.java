@@ -8,9 +8,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class CarMapper {
 
-    public Car toEntity(CarRequest request) {
+    public Car toEntity(Long id, CarRequest request) {
         Car car = new Car();
         car.setModel(request.getModel());
+        car.setPersonId(id);
         return car;
     }
 

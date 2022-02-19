@@ -15,4 +15,7 @@ public class Car {
 
     @Column(name = "model")
     private String model;
+
+    @Column(name = "person_id")
+    private Long personId;
 }
